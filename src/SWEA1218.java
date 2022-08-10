@@ -7,6 +7,8 @@ public class SWEA1218 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
         for (int tc = 1; tc <= 10; tc++) {
+            int inputSize = Integer.parseInt(br.readLine());
+            
             int result = 0;
             
             String input = br.readLine();
@@ -18,9 +20,9 @@ public class SWEA1218 {
                 if (s.size() > 0) {
                     if (
                             (s.peek().equals("(") && a.equals(")"))
-                            | (s.peek().equals("[") && a.equals("]"))
-                            | (s.peek().equals("{") && a.equals("}"))
-                            | (s.peek().equals("<") && a.equals(">"))
+                            || (s.peek().equals("[") && a.equals("]"))
+                            || (s.peek().equals("{") && a.equals("}"))
+                            || (s.peek().equals("<") && a.equals(">"))
                        ) {
                         s.pop();
                         continue;
